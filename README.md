@@ -22,7 +22,6 @@ func maindel(charargs *C.char) {
 	stringargs = C.GoString(charargs)
 	arrayargs := strings.Fields(stringargs)
     fmt.Println(arrayargs)
-	//args := stringargs
     cmd.Execute()
 }
 

@@ -5,6 +5,8 @@ I did this mainly to experiment for myself with embedding golang binaries in C#.
 
 The HackBrowserData main.go file was changed the following before compilation:
 
+This technique has one main disadvantage. It writes the dll into appdata on runtime to load it. Therefore it's easy to spot for defenders. 
+
 ```
 package main
 import "C"
